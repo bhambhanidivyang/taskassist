@@ -1,4 +1,4 @@
-import { SubmitButton } from "./SubmitButton";
+import { FormButton } from "./FormButton";
 import { InputField } from "./InputField";
 import { forwardRef } from 'react';
 
@@ -16,8 +16,8 @@ export const UnderlineForm = forwardRef<HTMLInputElement, UnderlineFormProps>(({
                 <div className="w-full max-w-xl">
                     <form onSubmit={handleSubmit}>
                         <div className="flex items-center border-b border-purple-500 py-2">
-                            <InputField ref={ref} value={inputValue} onChange={handleChange} placeholder="Enter Task Information" arialabel="Task Information" />
-                            <SubmitButton color="teal" text="Add Task" type="submit"/>
+                            <InputField inputType="transparentInput" ref={ref} value={inputValue} onChange={handleChange} placeholder="Enter Task Information" arialabel="Task Information" />
+                            <FormButton color="teal" text="Add Task" type="submit"/>
                         </div>
                         {error && <div className="text-red-500 font-mono text-xs">This is a mandatory field</div>}
                     </form>

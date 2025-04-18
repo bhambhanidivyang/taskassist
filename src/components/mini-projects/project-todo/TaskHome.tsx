@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from "react";
-import { UnderlineForm } from "../generic_components/UnderlineForm";
+import { UnderlineForm } from "../../generic_components/UnderlineForm";
 import { TaskList } from "./TaskList";
-import { Toggle } from "../generic_components/Toggle";
-import { InlineClock } from "../generic_components/InlineClock";
-import { AppHeading } from "../AppHeading";
+import { Toggle } from "../../generic_components/Toggle";
+import { InlineClock } from "../../generic_components/InlineClock";
+import { AppHeading } from "../../AppHeading";
 
 export const TaskHome = () => {
     const [inputValue, setInputValue] = useState('');

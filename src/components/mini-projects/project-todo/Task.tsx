@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { IconButton } from "../generic_components/IconButton";
+import { IconButton } from "../../generic_components/IconButton";
 
 interface TaskProps {
     task: {name: string; completed: boolean};

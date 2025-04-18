@@ -1,11 +1,10 @@
-// import './App.css'
-import { TaskHome } from './components/project-todo/TaskHome';
+import { CarsListing } from "./components/mini-projects/project-cars/CarsListing";
 
 function App() {
   return (
     <>
       <div className='w-full'>
-        <TaskHome />
+        <CarsListing/>
       </div>
     </>
   )
